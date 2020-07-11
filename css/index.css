@@ -46,8 +46,8 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /* slide text */
 .visuals .main-slide .text-info {display: block; position: relative; width: 600px; color: #fff; z-index: 1; top: 25%; left: 8%; height: 300px; font-size: 60px; z-index: 4;}
-.visuals .main-slide .text-info p.title {position: absolute; display: block; top: 0; padding: 10px 0;}
-.visuals .main-slide .text-info p.quote {position: absolute; display: block; top: 100px; }
+.visuals .main-slide .text-info p.title {display: block; margin: 15px 0;}
+.visuals .main-slide .text-info p.quote {display: block;}
 
 /* slide img */
 .slide-grad {position: absolute; top: 0; left: 0; z-index: 3; background: rgba(0, 0, 0, 0.22); width: 100%; height: var(--slideheight);} 
