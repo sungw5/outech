@@ -5,7 +5,7 @@
     --slide-circle-top: 87vh;
 }
 
-body {min-width: 1480px;}
+body {min-width: 1280px;}
 /*********************************** HEADER ***********************************/
 /* header logo (left) */
 
@@ -51,7 +51,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /* slide img */
 .slide-grad {position: absolute; top: 0; left: 0; z-index: 3; background: rgba(0, 0, 0, 0.22); width: 100%; height: var(--slideheight);} 
-.visuals .main-slide img {position: absolute; display: inline-block; width: 100vw; min-width: 1440px; height: var(--slideheight); top: 0;}
+.visuals .main-slide img {position: absolute; display: inline-block; width: 100%; min-width: 1440px; height: var(--slideheight); top: 0;}
 
 /* slide prev, next button */
 .visuals .main-slide .prev,
