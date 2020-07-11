@@ -5,7 +5,7 @@
     --slide-circle-top: 87vh;
 }
 
-body {min-width: 1280px;}
+body {min-width: 1480px;}
 /*********************************** HEADER ***********************************/
 /* header logo (left) */
 
@@ -41,7 +41,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .visuals .main-slide {position: absolute; display: block; top: 0; left: 0; z-index: 0;}
 
 /* slides */
-.visuals .main-slide > div {opacity: 0; display: block; position: absolute; width: 100vw; height: var(--slideheight);}
+.visuals .main-slide > div {opacity: 0; display: block; position: absolute; width: 100vw; height: var(--slideheight); transition: all 1s ease-in-out;}
 .visuals .main-slide .showing {opacity: 1;}
 
 /* slide text */
@@ -55,13 +55,14 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /* slide prev, next button */
 .visuals .main-slide .prev,
-.visuals .main-slide .next {position: absolute; display: block; top: var(--slide-play-top); color: #fff; font-size: 20px; z-index: 5; }
+.visuals .main-slide .next {position: absolute; display: block; top: var(--slide-play-top); color: #fff; font-size: 20px; z-index: 5; opacity: .4; transition: all 0.3s ease-in-out 0s; }
 .visuals .main-slide .prev {left: 25px;}
 .visuals .main-slide .next {left: 180px;}
+.visuals .main-slide > a:hover {opacity: 1;}
 
 /* slide bar circles */
-.visuals .main-slide ul {position: relative; display: inline-block; font-size: 10px; z-index: 5; top: var(--slide-circle-top); left: 66px;}
-
+.visuals .main-slide ul {position: relative; display: inline-block; font-size: 10px; z-index: 5; top: var(--slide-circle-top); left: 66px; opacity: .6; transition: all 0.3s ease-in-out 0s;}
+.visuals .main-slide ul:hover {opacity: 1;}
 .visuals .main-slide ul li {display: inline-block; padding: 0 3px;}
 .visuals .main-slide ul li a {display: block; color: #fff;}
 
@@ -72,7 +73,9 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .subnav .container {position: relative; display: flex; align-items: baseline; margin: 0 60px; padding: 10px 0 15px 0;}
 .subnav .container .title {font-size: 10px;}
 .subnav .container ul {display: flex; align-items: center; margin: 0 15px;} 
-.subnav .container ul li {display: inline-block; margin: 0 8px; padding: 0 5px 5px 5px; color: rgb(41, 40, 40);}
-.subnav .container ul .comment {position: absolute; right: 0;}
-.subnav .container ul li p {font-size: 6px; overflow-wrap: normal; width: 190px;}
+.subnav .container ul li {display: inline-block; position: relative; margin: 0 12px; padding: 0 5px 5px 5px; color: rgb(41, 40, 40); transition: all 0.3s ease-in-out 0s;}
+.subnav .container ul li:hover {transform: scale(1.2); color: #2dc997; margin: 0 25px;}
+.subnav .container ul .phone {font-size: 16px;}
+.subnav .container ul .comment {display: inline-block; position: absolute; right: 0; display: flex; align-items: center;}
+.subnav .container ul li p {font-size: 6px; position: absolute; right: 0; overflow-wrap: normal; width: 190px; color: rgb(145, 101, 20);}
 
