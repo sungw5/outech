@@ -2,7 +2,7 @@
     --mint-green: #2dc997;
     --slideheight: 100vh;
     --slide-play-top: 86.5vh;
-    --slide-circle-top: 87vh;
+    --slide-circle-top: 87.6vh;
 }
 
 body {min-width: 1280px;}
@@ -45,7 +45,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .visuals .main-slide .showing {opacity: 1;}
 
 /* slide text */
-.visuals .main-slide .text-info {display: block; position: relative; width: 600px; color: #fff; z-index: 1; top: 25%; left: 8%; height: 300px; font-size: 60px; z-index: 4;}
+.visuals .main-slide .text-info {display: block; position: relative; width: 700px; color: #fff; z-index: 1; top: 25%; left: 8%; height: 300px; font-size: 60px; z-index: 4;}
 .visuals .main-slide .text-info p.title {display: block; margin: 15px 0;}
 .visuals .main-slide .text-info p.quote {display: block;}
 
@@ -61,10 +61,12 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .visuals .main-slide > a:hover {opacity: 1;}
 
 /* slide bar circles */
-.visuals .main-slide ul {position: relative; display: inline-block; font-size: 10px; z-index: 5; top: var(--slide-circle-top); left: 66px; opacity: .6; transition: all 0.3s ease-in-out 0s;}
+.visuals .main-slide ul {position: relative; display: inline-block; z-index: 5; top: var(--slide-circle-top); left: 62px; opacity: .6; transition: all 0.3s ease-in-out 0s;}
 .visuals .main-slide ul:hover {opacity: 1;}
-.visuals .main-slide ul li {display: inline-block; padding: 0 3px;}
-.visuals .main-slide ul li a {display: block; color: #fff;}
+.visuals .main-slide ul li {display: inline-block; margin: 0 3px; color: #fff; border: 1.5px solid #fff; border-radius: 50%; height: 8px; width: 8px;}
+.visuals .main-slide ul li a {display: block; color: transparent;}
+
+.circle-showing {background: #fff;}
 
 
 /*********************************** SUBNAV ***********************************/
