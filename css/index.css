@@ -45,9 +45,18 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .visuals .main-slide .showing {opacity: 1;}
 
 /* slide text */
-.visuals .main-slide .text-info {display: block; position: relative; width: 1000px; color: #fff; z-index: 1; top: 25%; left: 8%; height: 300px; font-size: 60px; z-index: 4;}
-.visuals .main-slide .text-info p.title {display: block; margin: 15px 0; font-weight: 300;}
+.visuals .main-slide .text-info {display: block; position: relative; width: 1000px; color: #fff; z-index: 1; top: 26%; left: 8%; height: 300px; font-size: 60px; z-index: 4; transition: all 1s ease-in-out; animation-duration: 1s; animation-name: floating; animation-iteration-count: infinite; animation-direction: alternate;}
+.visuals .main-slide .text-info p.title {display: block; margin: 15px 0; font-weight: 300; }
 .visuals .main-slide .text-info p.quote {display: block;}
+
+@keyframes floating{
+    from {
+        top: 26%;
+    }
+    to {
+        top: 25%;
+    }
+}
 
 /* slide img */
 .slide-grad {position: absolute; top: 0; left: 0; z-index: 3; background: rgba(0, 0, 0, 0.22); width: 100%; height: var(--slideheight);} 

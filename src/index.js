@@ -10,6 +10,7 @@ const nextBtn = document.querySelector(".visuals .main-slide .next");
 // 5 slide circles (0~4)
 const slideCircles = document.querySelectorAll(".visuals .main-slide ul li");
 
+const slideTexts = document.querySelector(".visuals .main-slide .text-info");
 const SHOWING_CLASS = "showing";
 const ENABLE_CIRCLE = "circle-showing";
 
