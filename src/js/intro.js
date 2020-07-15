@@ -1,5 +1,7 @@
+///////////////// VARIABLES ////////////////////
 const body = document.querySelector("body");
 
+///////////////// FUNCTIONS ////////////////////
 function headerChange() {
   if (this.scrollY > 100) {
     body.style = "background: #fff";
@@ -8,6 +10,7 @@ function headerChange() {
   }
 }
 
+///////////////// MAIN ////////////////////
 function init() {
   window.addEventListener("scroll", headerChange, false);
 }

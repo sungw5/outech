@@ -1,3 +1,5 @@
+
+
 :root {
     --mint-green: #2dc997;
     --slideheight: 100vh;
@@ -5,13 +7,13 @@
     --slide-circle-top: 87.6vh;
 }
 
+html{scroll-behavior:smooth}
 
-
-body {position: relative; height: 100%; min-width: 1280px; background: rgb(29, 27, 28); transition: all 0.4s ease-in-out;}
+body {position: relative; height: 100%; min-width: 1280px; background: rgb(29, 27, 28); transition: all 0.6s ease-in-out;}
 /*********************************** HEADER ***********************************/
 /* header logo (left) */
 
-header {position: sticky; top: 0; display: block; text-align: center; height: 70px; border-bottom: 1px solid #fff; background: rgba(0, 0, 0, 0.06); z-index: 7;}
+header {position: sticky; top: 0; display: block; text-align: center; height: 70px; border-bottom: 1px solid #fff; background: rgba(0, 0, 0, 0.06); z-index: 1000;}
 header:hover {background: #fff; border-bottom: 1px solid var(--mint-green);}
 header:hover a, header:hover .menu a {color: #000;}
 
@@ -72,6 +74,19 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /******************************** CURRENT INFO ********************************/
 
-.current-info {position: relative; background: url(../asset/images/intro/outechcompanypic2.png) no-repeat; min-height: 840px; background-position: center; background-size: cover; background-attachment: fixed; }
+.current-info {position: relative; background: url(../asset/images/intro/outechcompanypic2.png) no-repeat; min-height: 840px; background-position: center; background-size: cover; background-attachment: fixed;}
 
-.current-info .ptext {position: absolute; font-size: 38px; width: 100%; color: #fff; z-index: 10; display: flex; justify-content: center; align-items: center;}
+.current-info .ptext {position: absolute; font-size: 38px; width: 100%; height: 100%; color: #fff; z-index: 10; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.4);}
+
+/* info lists */
+.current-info .ptext ul {display: flex; justify-content: space-around; align-items: flex-start; padding-top: 160px; }
+
+.current-info .ptext li {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 0 34px 40px; box-sizing: border-box; overflow-wrap: break-word}
+/* elements */
+.current-info .ptext li i {font-size: 50px;}
+.current-info .ptext li .p-title {font-size: 22px; padding: 40px 0 10px;}
+.current-info .ptext li .p-content {font-size: 18px; opacity: 0.7;}
+
+/* company profile title */
+.company-profile {position: absolute; display: inline-block; z-index: 10; color: #fff; top: 19%; left: 7%; font-size: 24px; letter-spacing: .2em; font-family: 'Oswald', sans-serif;}
+.company-profile::before {content: ''; position: absolute; width: 120px; height: 4px; margin-top: -2px; top: 50%; right: -60%; background-position: center center; background-repeat: no-repeat; background-color: #f8b922;}
