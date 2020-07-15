@@ -7,6 +7,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" href="../css/intro.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- icons -->
     <script
       src="https://kit.fontawesome.com/e72b0a8231.js"
@@ -16,7 +18,7 @@
 
   <body>
     <div class="site">
-      <!------------------ HEADER ----------------->
+      <!------------------< HEADER >----------------->
       <header>
         <h1>
           <a href="../index.html">(주)오유/오유테크코리아</a>
@@ -29,9 +31,9 @@
                 ><span>회사소개<i class="fas fa-angle-down"></i></span
               ></a>
               <ul class="dropdown">
-                  <li><a href="./intro.html">인사말</a></li>
-                  <li><a href="#a">현황</a></li>
-                  <li><a href="#a">전시회</a></li>
+                  <li><a href="./intro.html#intro-section">인사말</a></li>
+                  <li><a href="./intro.html#current-info">현황</a></li>
+                  <li><a href="#a">회사연혁</a></li>
                   <li><a href="#a">오시는길</a></li>
               </ul>
             </li>
@@ -64,9 +66,25 @@
           </ul>
         </nav>
       </header>
-      
-      <!------------------ VISUAL SECTION ----------------->
-      
+
+
+      <!---------------- TITLEPIC----------------->
+
+      <div class="bg-shade"></div>
+      <div class="titlepic">
+          <div class="text">
+            <span class="border">회사소개</span>
+          </div>
+      </div>
+          
+    
+
+      <!--------------< INTRO SECTION >--------------->
+      <section class="intro-section" id="intro-section" data-aos="flip-left">
+          <img src="../asset/images/intro/c33.png" alt="">
+      </section>
+
+
       <!------------------ SUBNAV----------------->
       <div class="subnav">
         <div class="container">
@@ -83,14 +101,38 @@
           </ul>
         </div>
       </div>
-      
-      <section class="company-section">
-        
+
+      <!-------------< CURRENT INFO >--------------->
+
+      <section class="current-info" id="current-info">
+        <div class="ptext">
+          <span class="border">
+            Image Three
+          </span>
+        </div>
       </section>
 
-      
-    </div>
 
-    <script src="./src/js/index.js"></script>
+      <!-------------< TimeLine >--------------->
+    
+      <section class="timeline" id="timeline">
+          
+      </section>
+
+
+
+
+      
+
+
+    </div>
+    <script src="../src/js/intro.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400,
+        duration: 2000
+    });
+  </script>
   </body>
 </html>
