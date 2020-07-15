@@ -2,6 +2,9 @@
 
 :root {
     --mint-green: #2dc997;
+    --cool-blue: #e285da;
+    --cooler-blue: rgba(84, 151, 228, 1);
+    --cooler-blue-shadow: rgba(84, 151, 228, .3);
     --slideheight: 100vh;
     --slide-play-top: 86.5vh;
     --slide-circle-top: 87.6vh;
@@ -14,7 +17,7 @@ body {position: relative; height: 100%; min-width: 1280px; background: rgb(29, 2
 /* header logo (left) */
 
 header {position: sticky; top: 0; display: block; text-align: center; height: 70px; border-bottom: 1px solid #fff; background: rgba(0, 0, 0, 0.06); z-index: 1000;}
-header:hover {background: #fff; border-bottom: 1px solid var(--mint-green);}
+header:hover {background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.4);}
 header:hover a, header:hover .menu a {color: #000;}
 
 header h1 {position: absolute; left: 50px; top:0;}
@@ -81,7 +84,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /* info lists */
 .current-info .ptext ul {display: flex; justify-content: space-around; align-items: flex-start; padding-top: 160px; }
 
-.current-info .ptext li {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 0 34px 40px; box-sizing: border-box; overflow-wrap: break-word}
+.current-info .ptext li {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 0 34px 40px; box-sizing: border-box; overflow-wrap: break-word;}
 /* elements */
 .current-info .ptext li i {font-size: 50px;}
 .current-info .ptext li .p-title {font-size: 22px; padding: 40px 0 10px;}
@@ -90,3 +93,32 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /* company profile title */
 .company-profile {position: absolute; display: inline-block; z-index: 10; color: #fff; top: 19%; left: 7%; font-size: 24px; letter-spacing: .2em; font-family: 'Oswald', sans-serif;}
 .company-profile::before {content: ''; position: absolute; width: 120px; height: 4px; margin-top: -2px; top: 50%; right: -60%; background-position: center center; background-repeat: no-repeat; background-color: #f8b922;}
+
+/******************************** TIMELINE ********************************/
+
+.timeline {position: relative; margin: 60px auto; padding: 140px 0; width: 1000px; box-sizing: border-box;}
+/* center line (중앙선) */
+.timeline::before {content: ''; position: absolute; left: 50%; width: 2px; height: 1150px; background: #c5c5c5;}
+/* TIMELINE title */
+.timeline > h1 {position: absolute; left: 50%; transform: translateX(-50%); font-size: 45px; margin-bottom: 40px; top: 30px; font-family: 'Oswald', sans-serif; letter-spacing: .3em; color: rgb(223, 143, 156);}
+
+.timeline ul {margin: 40px 0 0 0; padding: 0;}
+.timeline ul li {list-style: none; line-height: normal; position: relative; width: 50%; padding: 10px 40px; box-sizing: border-box;}
+
+/* lines and bullets */
+.timeline ul li:nth-child(odd) {float: left; text-align: right; clear: both;}
+.timeline ul li:nth-child(odd)::before {content: ''; position: absolute; top: 24px; right: -6px; width: 10px; height: 10px; background: var(--cool-blue); border-radius: 50%; box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);}
+
+.timeline ul li:nth-child(even) {float: right; text-align: left; clear: both;}
+.timeline ul li:nth-child(even)::before {content: ''; position: absolute; top: 24px; left: -4px; width: 10px; height: 10px; background: var(--cool-blue); border-radius: 50%; box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);}
+
+/* gaps (간격) */
+.content {padding-bottom: 93px;}
+/* Texts */
+.timeline ul li h3 {margin: 0; padding: 0; font-weight: 600; color:#000; font-size: 31px; overflow-wrap: break-word; }
+/* Years */
+.timeline ul li .time h4 {margin: 0; padding: 0; font-size: 20px; }
+/* Years' box */
+.timeline ul li:nth-child(odd) .time {position: absolute; top: 12px; right: -115px; margin: 0; padding: 8px 16px; background: var(--cooler-blue); color: #fff; border-radius: 18px; box-shadow: 0 0 0 3px var(--cooler-blue-shadow);}
+
+.timeline ul li:nth-child(even) .time {position: absolute; top: 12px; left: -115px; margin: 0; padding: 8px 16px; background: var(--cooler-blue); color: #fff; border-radius: 18px; box-shadow: 0 0 0 3px var(--cooler-blue-shadow);}
