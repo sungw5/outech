@@ -5,9 +5,6 @@
     --cool-blue: #e285da;
     --cooler-blue: rgba(84, 151, 228, 1);
     --cooler-blue-shadow: rgba(84, 151, 228, .3);
-    --slideheight: 100vh;
-    --slide-play-top: 86.5vh;
-    --slide-circle-top: 87.6vh;
 }
 
 html{scroll-behavior:smooth}
@@ -47,18 +44,55 @@ header .menu ul .dropdown li a:hover {background: linear-gradient(to right, #219
 header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 
-/*********************************** TITLEPIC ***********************************/
+/******************************** TITLEPIC ***********************************/
 
-.bg-shade {background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ width:100%; min-height:290px; position: absolute;}
+.bg-shade {background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/ width:100%; min-height:290px; position: absolute;}
 /* parallax effect bg */
-.titlepic {display: grid; justify-content: center; align-items: center; width: 100%; min-height: 290px; background: url(../asset/images/titlepic/collab.jpg) 0 -200px  no-repeat; background-position: center; background-size: cover; background-attachment: fixed; }
+.titlepic {display: grid; justify-content: center; align-items: center; width: 100%; min-height: 290px; background: url(../asset/images/edm/cnc-edm-machining-1.jpg) 0 -200px  no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
 
 .titlepic .text {font-size: 38px; width: 100%; color: #fff; z-index: 10;}
 
 
+
+/********************************** CHMER ***********************************/
+
+.chmer {position: relative; margin: 0 20% 0; min-height: 1920px; transition: all 0.9s ease-in-out 0s;}
+/* yellow bar */
+
+.chmer .yellow-bar{position: absolute; width: 0; height: 4px; top: 240px; left: -10%; background-position: center center; background-repeat: no-repeat; background-color: #f8b922; color: transparent; transition: all 0.8s ease-in-out 0s;}
+
+.chmer span.introduction {position: absolute; top: 280px; left: -7%; font-size: 27px; font-family: 'Oswald', sans-serif; letter-spacing: 0.2em; color: #010101;}
+/* CHMER website link */
+.chmer > a {position: absolute; top: 50px; left: 50%; transform: translateX(-50%); background: url(../asset/images/edm/chmerlink.gif) no-repeat; width: 428px; height: 100px; color: transparent; z-index: 1;}
+/* center line */
+.chmer > a::before {content: ''; position: absolute; top: 100px; left: 50%; width: 1px; height: 1790px; background: #dbd7d7; opacity: 0.7; z-index: -1;}
+/* chmer foundation img */
+.chmer img.chmerbuilding {position: absolute; top: 240px; left: 40%; z-index: 1; width: 579px; height: 362px;}
+
+/* foundation box */
+.chmer p.p-foundation {position: absolute; width: 455px; top: 480px;left: 65%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #f8b922 solid; box-sizing: border-box; padding: 140px 40px 40px; z-index: 2; background: #fff; color: #666666;}
+/* foundation box titles */
+.chmer p.p-foundation > span.edm {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #f8b922; font-size: 32px; letter-spacing: 0.2em;}
+.chmer p.p-foundation > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
+
+
+.chmer img.rvslide {position: absolute; top: 670px; left: -10%; z-index: 1; width: 579px; height: 322px;}
+/* awards box */
+.chmer p.p-awards {position: absolute; width: 530px; top: 930px;left: -20%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #f8b922 solid; box-sizing: border-box; padding: 140px 40px 40px; z-index: 2; background: #fff; color: #666666;}
+/* awards box title */
+.chmer p.p-awards > span.history {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #f8b922; font-size: 32px; letter-spacing: 0.2em;}
+.chmer p.p-awards > span.awards {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
+
+.chmer img.chmermachines {position: absolute; top: 1060px; left: 55%; z-index: 1; width: 579px; height: 472px;}
+/* chmermachine box */
+.chmer p.p-machines {position: absolute; width: 405px; top: 1400px; left: 35%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #f8b922 solid; box-sizing: border-box; padding: 140px 50px 40px; z-index: 2; background: #fff; color: #666666;}
+.chmer p.p-machines > span.today {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #f8b922; font-size: 32px; letter-spacing: 0.2em;}
+.chmer p.p-machines > span.why {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
+
+
 /*********************************** SUBNAV ***********************************/
 
-.subnav {position: -webkit-sticky; position: sticky; bottom: 0; background: #fff; border-bottom: 1px solid #222;}
+.subnav {position: -webkit-sticky; position: sticky; bottom: 0; background: #fff; border-bottom: 1px solid #222; z-index: 900;}
 .subnav .container {position: relative; display: flex; align-items: baseline; margin: 0 60px; padding: 10px 0 15px 0;}
 .subnav .container .title {font-size: 10px;}
 .subnav .container ul {display: flex; align-items: center; margin: 0 15px;} 
