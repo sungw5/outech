@@ -16,8 +16,11 @@
     ></script>
     <!-- Google fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&family=Titillium+Web&display=swap');
     </style>
+    <!-- KAKAO API -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=89ab4957a875100279396e153b3bebe9"></script>
+    
   </head>
 
   <body>
@@ -182,9 +185,30 @@
           </ul>
       </section>
 
-      <!-------------< FIND US >--------------->
+      <!-------------< LOCATION >--------------->
 
-      
+      <section class="location">
+        <div class="map" id="map" style="width:1080px;height:480px;"></div>
+      </section>
+
+      <footer>
+          <div class="footer">
+              <p>(주)오유/오유테크코리아</p>
+              <ul>
+                  <li>경기도 화성시 마도면 쌍송리 664-7 마도 지방산업단지 2B-9L</li>
+                  <li>대표이사  오 경 명</li>
+                  <li>사업자등록번호: 133-11-68460 오유테크코리아</li>
+                  <li>Tel: <strong>031-355-6526~7</strong></li>
+                  <li>Fax: 031-355-6528</li>
+                  
+              </ul>
+              <ul>
+                <li>E-mail: outechkorea@naver.com</li>
+                <li>부산 지역사무소: 부산시 사상구 괘법동 578 부산산업용품유토상가 20동 123호  (Tel: 051-319-0515)</li>
+              </ul>
+              <address>COPYRIGHT<i class="far fa-copyright">OUTECH KOREA All Rights Reserved.</i></address>
+          </div>
+      </footer>
 
 
 
@@ -194,12 +218,23 @@
 
     </div>
     <script src="../src/js/intro.js"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
         offset: 100,
         duration: 2000
     });
+  </script>
+  <!-- KAKAO -->
+  <script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
   </script>
   </body>
 </html>

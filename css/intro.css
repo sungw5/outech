@@ -97,7 +97,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /******************************** TIMELINE ********************************/
 
-.timeline {position: relative; margin: 60px auto; padding: 140px 0; width: 1000px; box-sizing: border-box;}
+.timeline {position: relative; margin: 60px auto; padding: 140px 0; width: 1000px; box-sizing: border-box; min-height: 1300px;}
 /* center line (중앙선) */
 .timeline::before {content: ''; position: absolute; left: 50%; width: 2px; height: 1150px; background: #c5c5c5;}
 /* TIMELINE title */
@@ -116,10 +116,28 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /* gaps (간격) */
 .content {padding-bottom: 93px;}
 /* Texts */
-.timeline ul li h3 {margin: 0; padding: 0; font-weight: 600; color:#000; font-size: 29px; overflow-wrap: break-word; }
+.timeline ul li h3 {margin: 0; padding: 0; font-weight: 600; color:#000; font-size: 29px; overflow-wrap: break-word;}
 /* Years */
 .timeline ul li .time h4 {margin: 0; padding: 0; font-size: 20px; }
 /* Years' box */
 .timeline ul li:nth-child(odd) .time {position: absolute; top: 12px; right: -115px; margin: 0; padding: 8px 16px; background: var(--cooler-blue); color: #fff; border-radius: 18px; box-shadow: 0 10px 20px rgba(8, 112, 184, 0.7);}
 
 .timeline ul li:nth-child(even) .time {position: absolute; top: 12px; left: -115px; margin: 0; padding: 8px 16px; background: var(--cooler-blue); color: #fff; border-radius: 18px; box-shadow: 0 10px 20px rgba(8, 112, 184, 0.7);}
+
+/******************************** LOCATION ********************************/
+
+.location {position: relative; margin: 60px 0 0 0 auto; min-height: 840px; background: rgb(133, 119, 90); display: flex; justify-content: center; align-items: center;}
+
+.location .map {position: absolute; border: 1px solid #fff;}
+
+
+/******************************** FOOTER ********************************/
+
+footer .footer {display: block; background: rgb(30, 32, 36); font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); font-weight: 400; text-align: center; padding: 40px 0 30px;}
+footer .footer p {display: inline-block; width: 300px; height: 40px; font-size: 20px; font-weight: bold;}
+
+footer .footer ul {padding: 14px 0 14px;}
+footer .footer ul li {position: relative; display: inline-block; font-style: 16px; padding: 0 10px;}
+footer .footer ul li::after {content: ''; position: absolute; width: 1px; height: 8px; right: 0; top: 50%; margin-top: -4px; background: #70767a;}
+footer .footer ul li:last-child::after {display: none;}
+address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.5);}
