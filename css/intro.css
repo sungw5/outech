@@ -126,7 +126,8 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /******************************** LOCATION ********************************/
 
-.location {position: relative; margin: 60px 0 0 0 auto; min-height: 840px; background: rgb(133, 119, 90); display: flex; justify-content: center; align-items: center;}
+.location {position: relative; margin: 60px 0 0 0 auto; min-height: 840px; background: rgb(168, 155, 130); display: flex; justify-content: center; align-items: center;}
+.location > h1 {position: absolute; color: #fff; top: 90px; font-size: 30px; font-weight: bold;}
 
 .location .map {position: absolute; border: 1px solid #fff;}
 
