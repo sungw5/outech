@@ -104,6 +104,37 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 
 
+/*********************************** next ***********************************/
+
+.next {position: relative; display: flex; justify-content: center; min-height: 330px; background: #fff;}
+
+.next a {position: relative; display: block; text-align: center; margin: 20px; box-sizing: border-box; transition: all 0.5s ease-in; border-top: groove 1px #f8b922;
+    border-right: ridge 10px #f8b922;}
+
+.next a:hover {transform: translateY(-15%);}
+.next a:hover h2 {width: 97.5%; height: 97.5%; opacity: .5; background: rgb(255,255,255); background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(248,185,34,1) 82%, rgba(248,185,34,1) 100%); }
+
+.next a h2 {position: absolute; top: 0; right: 0; color: #fff; background: #f8b922; width: 40%; height: 30px; text-align: center; font-size:20px; padding: 5px; transition: all 0.3s ease-in-out;}
+.next a h2 i {padding-left: 10px; transform: translateY(-5%); font-size: 20px;}
+
+.next img {width: 420px; height: 330px; box-sizing: border-box; overflow: hidden;}
+
+/*********************************** EDM2 ***********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******************************** FOOTER ********************************/
 
 footer .footer {display: block; background: rgb(30, 32, 36); font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); font-weight: 400; text-align: center; padding: 40px 0 30px;}
