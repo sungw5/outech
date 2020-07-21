@@ -56,21 +56,23 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /******************************** TARGET-INFO ***********************************/
 
-
-.target-info {position: relative; min-height: 720px; margin 0 auto; padding-top: 25px;}
-.target-info .category {position: relative; background: #e0aa2b; height: 50px; }
-.target-info .category h2 {position: absolute; left: 20%; font-size: 40px; color: #fff; transform: translateY(-10%);}
+/* title nav bar */
+.target-info {position: relative; min-height: 720px; margin 0 auto; padding-top: 70px;}
+.target-info .category {position: relative; background: #e0aa2b; height: 50px; border-bottom: 4px solid #e5e5e5;}
+.target-info .category h2 {position: absolute; left: 18%; font-size: 37px; color: #fff; transform: translateY(-10%);}
 .target-info .category ul {position: absolute; right: 20%; top: 9px;}
 .target-info .category ul li {display: inline-block; font-size: 13px;}
 .target-info .category ul li a {color: #000000;}
+.target-info .category ul li a:hover {color: #fff;}
 .target-info .category ul li i {padding: 9px;}
 
+/* contents */
+.target-info > img {position: absolute; top: 160px; left: 10%;}
+.target-info .content {position: absolute; top: 200px; right: 17%; font-size: 18px;  border-top: 2px solid #ecd79b; border-left: 2px solid #e5e5e5; padding: 25px;}
+.target-info .content ul li {padding: 5px;}
 
-.target-info > img {position: absolute; top: 130px; left: 10%;}
-
-
-
-
+.target-info a.manual {position: absolute; top: 590px; right: 20%; background: #e0aa2b; padding: 20px; border: 1px solid #e5e5e5; transition: all 0.3s ease-in-out; font-weight: 500; color: #fff;}
+.target-info a.manual:hover {opacity: .7;}
 
 
 
@@ -85,9 +87,6 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .subnav .container ul .phone {font-size: 16px;}
 .subnav .container ul .comment {display: inline-block; position: absolute; right: 0; display: flex; align-items: center;}
 .subnav .container ul li p {font-size: 6px; position: absolute; right: 0; overflow-wrap: normal; width: 190px; color: rgb(145, 101, 20);}
-
-
-
 
 
 /******************************** FOOTER ********************************/
