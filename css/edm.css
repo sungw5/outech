@@ -124,13 +124,15 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .wirecut {position: relative; min-height: 1080px; }
 
 /* CATEGORY */
-.category ul {display: flex; justify-content: center; align-items: center; min-width: 300px; color: #000; margin: 20px 400px;}
+.category {background: #e0aa2b;}
+
+.category ul {display: flex; justify-content: center; align-items: center; min-width: 300px; color: #000; margin: 0px 400px;}
 
 .category ul li {position: relative; width: 50px; height: 50px; width: 350px;}
 
 .category ul li a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; box-sizing: border-box; color: #fff; font-size: 17px; font-weight: 600; background: #e0aa2b; border-bottom: 5px ridge #fff; transition: all 0.3s ease-in-out;}
 
-.category ul li a:hover {opacity: 0.8;}
+.category ul li a:hover {background: #f3cb6d;}
 
 .category ul li a::after {content: ''; position: absolute; width: 2px; height: 16px; right: 0; top: 50%; transform: translateY(-40%); margin-top: -4px; background: #c29912;}
 /* Hover effect */
@@ -143,12 +145,12 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .items {position: absolute; left: 50%; transform: translateX(-50%); margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; z-index: 5; opacity: 0; transition: all 0.5s ease-in-out;}
 
 
-.series-info {position: absolute; text-align: center; min-height: 480px; width: 1000px; margin: 0 auto; z-index: -1; top: 0; padding: 0; font-size: 15px;}
+.series-info {position: absolute; text-align: center; min-height: 480px; width: 1000px; margin: 0 auto; z-index: -1; top: 35px; padding: 0; font-size: 15px;}
 .series-info h2 {padding: 12px;}
 
 
 
-.wirecut .container {width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); justify-content: center; grid-gap: 35px; margin-top: 180px; }
+.wirecut .container {width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); justify-content: center; grid-gap: 35px; margin-top: 220px; }
 
 .box {position: relative; width: 280px; height: 250px; background: #000; box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);}
 .box .imgBox {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
