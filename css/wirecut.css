@@ -74,7 +74,10 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .target-info a.manual {position: absolute; top: 590px; right: 20%; background: #e0aa2b; padding: 20px; border: 1px solid #e5e5e5; transition: all 0.3s ease-in-out; font-weight: 500; color: #fff;}
 .target-info a.manual:hover {opacity: .7;}
 
-
+/* for RV (img too big) */
+.rv > img {left: 2%;}
+.rv .content {right: 100px;}
+.rv a.manual {right: 5%;}
 
 /*********************************** SUBNAV ***********************************/
 
