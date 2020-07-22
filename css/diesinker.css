@@ -75,12 +75,11 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .target-info a.manual:hover {opacity: .7;}
 
 /* for RV (img too big) */
-.rv > img {left: 2%;}
-.rv .content {right: 100px;}
-.rv a.manual {right: 5%;}
-.rx > img {left: 5%}
-.rx .content {right: 10%;}
-.rx a.manual {right: 5%;}
+.cma > img {width: 600px; left: 2%;}
+.cma .content {top: 120px;}
+.cma a.manual {top: 585px;}
+.mp > img {top: 90px}
+.mp a.manual {top: 555px;}
 
 /*********************************** SUBNAV ***********************************/
 
