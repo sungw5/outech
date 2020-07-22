@@ -78,6 +78,9 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .rv > img {left: 2%;}
 .rv .content {right: 100px;}
 .rv a.manual {right: 5%;}
+.rx > img {left: 5%}
+.rx .content {right: 10%;}
+.rx a.manual {right: 5%;}
 
 /*********************************** SUBNAV ***********************************/
 
