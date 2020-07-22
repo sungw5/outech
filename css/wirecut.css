@@ -59,7 +59,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /* title nav bar */
 .target-info {position: relative; min-height: 720px; margin 0 auto; padding-top: 70px;}
 .target-info .category {position: relative; background: #e0aa2b; height: 50px; border-bottom: 4px solid #e5e5e5;}
-.target-info .category h2 {position: absolute; left: 18%; font-size: 37px; color: #fff; transform: translateY(-10%);}
+.target-info .category h2 {position: absolute; left: 18%; font-size: 37px; color: #fff;}
 .target-info .category ul {position: absolute; right: 20%; top: 9px;}
 .target-info .category ul li {display: inline-block; font-size: 13px;}
 .target-info .category ul li a {color: #000000;}
