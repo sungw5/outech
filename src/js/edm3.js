@@ -25,19 +25,19 @@ function barChange() {
 }
 
 ////////////////// Wirecut //////////////////
-// 0 - G
-// 1 - GX
-// 2 - Q
-// 3 - RV
-// 4 - RX
+// 0 - CNC
+// 1 - CNC A
+// 2 - CNC Linear
+// 3 - EZ
+// 4 - MP
 const category = document.querySelectorAll(".wirecut .category ul li");
 
-// grids - wirecut
-const gSeries = document.querySelector(".wirecut .g-series");
-const gxSeries = document.querySelector(".wirecut .gx-series");
-const qSeries = document.querySelector(".wirecut .q-series");
-const rvSeries = document.querySelector(".wirecut .rv-series");
-const rxSeries = document.querySelector(".wirecut .rx-series");
+// grids - ds
+const cncSeries = document.querySelector(".ds .cnc-series");
+const cncaSeries = document.querySelector(".ds .cnca-series");
+const cnclinearSeries = document.querySelector(".ds .cnclinear-series");
+const ezSeries = document.querySelector(".ds .ez-series");
+const mpSeries = document.querySelector(".ds .mp-series");
 
 const SHOWING_CLASS = "showing"; // showing grids
 const ACTIVE_CLASS = "active"; // active category
@@ -50,23 +50,23 @@ function pickCategory(e) {
 
   if (e.currentTarget === category[0]) {
     category[0].classList.add(ACTIVE_CLASS);
-    gSeries.classList.add(SHOWING_CLASS);
+    cncSeries.classList.add(SHOWING_CLASS);
   }
   if (e.currentTarget === category[1]) {
     category[1].classList.add(ACTIVE_CLASS);
-    gxSeries.classList.add(SHOWING_CLASS);
+    cncaSeries.classList.add(SHOWING_CLASS);
   }
   if (e.currentTarget === category[2]) {
     category[2].classList.add(ACTIVE_CLASS);
-    qSeries.classList.add(SHOWING_CLASS);
+    cnclinearSeries.classList.add(SHOWING_CLASS);
   }
   if (e.currentTarget === category[3]) {
     category[3].classList.add(ACTIVE_CLASS);
-    rvSeries.classList.add(SHOWING_CLASS);
+    ezSeries.classList.add(SHOWING_CLASS);
   }
   if (e.currentTarget === category[4]) {
     category[4].classList.add(ACTIVE_CLASS);
-    rxSeries.classList.add(SHOWING_CLASS);
+    mpSeries.classList.add(SHOWING_CLASS);
   }
 }
 

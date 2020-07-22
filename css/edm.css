@@ -128,7 +128,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .category ul {display: flex; justify-content: center; align-items: center; min-width: 300px; color: #000; margin: 0px 400px;}
 
-.category ul li {position: relative; width: 50px; height: 50px; width: 350px;}
+.category ul li {position: relative; height: 50px; width: 350px;}
 
 .category ul li a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; box-sizing: border-box; color: #fff; font-size: 17px; font-weight: 600; background: #e0aa2b; border-bottom: 5px ridge #fff; transition: all 0.3s ease-in-out;}
 
@@ -144,11 +144,8 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /* ITEM GRID */
 .items {position: absolute; left: 50%; transform: translateX(-50%); margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; z-index: 5; opacity: 0; transition: all 0.5s ease-in-out;}
 
-
 .series-info {position: absolute; text-align: center; min-height: 480px; width: 1000px; margin: 0 auto; z-index: -1; top: 35px; padding: 0; font-size: 15px;}
 .series-info h2 {padding: 12px;}
-
-
 
 .wirecut .container {width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); justify-content: center; grid-gap: 35px; margin-top: 220px; }
 
@@ -168,8 +165,9 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .wirecut .showing {z-index: 10; opacity: 1;}
 
 
-
-
+/*********************************** EDM3 ***********************************/
+.ds {min-height: 1200px;}
+.ds .category ul li a {font-size: 15.5px;}
 
 
 
