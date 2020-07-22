@@ -18,8 +18,8 @@ function headerChange() {
 ///////////////// MAIN ////////////////////
 function init() {
   // scroll events
-  window.addEventListener("scroll", headerChange, false);
-  window.addEventListener("scroll", barChange, false);
+  //   window.addEventListener("scroll", headerChange, false);
+  //   window.addEventListener("scroll", barChange, false);
 }
 
 init();
