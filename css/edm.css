@@ -149,7 +149,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .wirecut .container {width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); justify-content: center; grid-gap: 35px; margin-top: 220px; }
 
-.box {position: relative; width: 280px; height: 250px; background: #000; box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);}
+.box {position: relative; width: 280px; height: 250px; background: #fff; box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);}
 .box .imgBox {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .box .imgBox img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: 0.5s;}
 .box:hover .imgBox img {opacity: 0;}
@@ -168,7 +168,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /*********************************** EDM3 ***********************************/
 .ds {min-height: 1200px;}
 .ds .category ul li a {font-size: 15.5px;}
-
+.drill {min-height: 720px;}
 
 
 /******************************** FOOTER ********************************/
