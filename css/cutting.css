@@ -1,0 +1,132 @@
+
+
+:root {
+    --mint-green: #2dc997;
+    --cool-blue: #e285da;
+    --cooler-blue: rgba(84, 151, 228, 1);
+    --cooler-blue-shadow: rgba(84, 151, 228, .3);
+}
+
+html{scroll-behavior:smooth}
+
+body {position: relative; height: 100%; min-width: 1280px; background: rgb(29, 27, 28); transition: all 0.6s ease-in-out;}
+/*********************************** HEADER ***********************************/
+/* header logo (left) */
+
+header {position: sticky; top: 0; display: block; text-align: center; height: 70px; border-bottom: 1px solid #fff; background: rgba(0, 0, 0, 0.06); z-index: 1000;}
+header:hover {background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.4);}
+header:hover a, header:hover .menu a {color: #000;}
+
+header h1 {position: absolute; left: 50px; top:0;}
+header h1 a {display: block; width: 330px; height: 70px; display: flex; align-items: center; justify-content: center; color: #fff;}
+header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -20px; transform: scale(0.4) translateY(4.5%);}
+
+
+/* header menu */
+header .menu {display: inline-block; position: absolute; right: 50px; top: 0;}
+header .menu li {position: relative; float: left;}
+header .menu li a {display: block; height: 70px; line-height: 70px; padding: 0 30px; font-size: 17px; color: #fff;}
+/* menu hover effect */
+header .menu li a::before {content: ""; position: absolute; width: 100%; height: 2px; left: 0; bottom: 0; background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); color: #fff; visibility: hidden; transform: scale(0); transition: all 0.3s ease-in-out 0s;}
+header .menu li:hover::before, header .menu li:hover > a::before { visibility: visible; transform: scale(1);
+}
+
+/* Intro 회사소개 active */
+header .menu li:nth-child(3) a::before {visibility: visible; transform: scale(1); height: 3px; background: linear-gradient(to right, #2193b0, #6dd5ed);}
+
+/* dropdown icon */
+header .menu li a i {padding-left: 8px;}
+header .menu ul .dropdown {display: block; position: absolute; width: 100%; left: 0; margin-top: 1.2px; background: rgb(250, 249, 247); border: 1px solid #fff; visibility: hidden; opacity: 0; transition: all 0.3s ease-in-out 0.2s;}
+header .menu ul .dropdown li {position: relative; width: 100%;}
+header .menu ul .dropdown li a {display: block; height: 50px; line-height: 50px; transition: all 0.2s ease 0s; font-size: 14px; padding: 0; color: #000;}
+header .menu ul .dropdown li a::before {display: none;}
+header .menu ul .dropdown li a:hover {background: linear-gradient(to right, #2193b0, #6dd5ed); color: #fff;}
+header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
+
+
+/******************************** TITLEPIC ***********************************/
+
+.bg-shade {background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/ width:100%; min-height:290px; position: absolute;}
+/* parallax effect bg */
+.titlepic {display: grid; justify-content: center; align-items: center; width: 100%; min-height: 290px; background: url(../asset/images/edm/cnc-edm-machining-1.jpg) 0 -200px  no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
+
+.titlepic .text {font-size: 38px; width: 100%; color: #fff; z-index: 10;}
+
+
+/*****************************************************************************/
+/********************************** FEELER ***********************************/
+/*****************************************************************************/
+.feeler {position: relative; margin: 0 20% 0; min-height: 2100px; transition: all 0.9s ease-in-out 0s;}
+
+.feeler::before {content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 2300px; background: #dbd7d7; opacity: 0.7; z-index: -1;}
+/* yellow bar */
+.feeler img.ffglogo {position: absolute; left: 20%; transform: translateX(-50%); top: 60px; background: #fff;
+    z-index: 10; transition: all .5s ease-in-out; opacity: 0;
+    -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #6dd5ed, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #2193b0, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #6dd5ed, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #2193b0, 5px 5px 15px 5px rgba(0,0,0,0);}
+
+.feeler .yellow-bar{position: absolute; width: 0; height: 4px; top: 150px; left: 50%; background-position: center center; background-repeat: no-repeat; background-color: #49a5b1; color: transparent; transition: all 0.8s ease-in-out 0s; z-index: 0;}
+
+
+.feeler span.introduction {position: absolute; top: 200px; left: 72%; font-size: 27px; font-family: 'Oswald', sans-serif; letter-spacing: 0.2em; color: #010101;}
+
+.feeler img.ffgbuilding {position: absolute; top: 400px; left: 40%;}
+.feeler img.feelerlogo {position: absolute; top: 615px; left: 60%;}
+.feeler img.example {position: absolute; left: -15%; top: 900px;}
+.feeler img.feelercircle {position: absolute; left: 50%; transform: translateX(-50%); top: 1500px; opacity: 0.2; transition: all .5s ease-in-out;}
+
+
+
+
+/* ffg intro box */
+.feeler p.p-ffgintro {position: absolute; width: 500px; top: 400px; left: -8.5%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #6dd5ed solid; box-sizing: border-box; padding: 140px 50px 40px; z-index: 2; background: #fff; color: #666666;}
+.feeler p.p-ffgintro > span.ffg {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #6dd5ed; font-size: 32px; letter-spacing: 0.2em;}
+.feeler p.p-ffgintro > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
+
+/* feeler intro box */
+.feeler p.p-feelerintro {position: absolute; width: 650px; top: 1040px; left: 45%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #6dd5ed solid; box-sizing: border-box; padding: 140px 50px 40px; z-index: 2; background: #fff; color: #666666;}
+.feeler p.p-feelerintro > span.ffg {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #6dd5ed; font-size: 32px; letter-spacing: 0.2em;}
+.feeler p.p-feelerintro > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
+
+
+
+
+/*********************************** SUBNAV ***********************************/
+
+.subnav {position: -webkit-sticky; position: sticky; bottom: 0; background: #fff; border-bottom: 1px solid #222; z-index: 900;}
+.subnav .container {position: relative; display: flex; align-items: baseline; margin: 0 60px; padding: 10px 0 15px 0;}
+.subnav .container .title {font-size: 10px;}
+.subnav .container ul {display: flex; align-items: center; margin: 0 15px;} 
+.subnav .container ul li {display: inline-block; position: relative; margin: 0 12px; padding: 0 5px 5px 5px; color: rgb(41, 40, 40); transition: all 0.3s ease-in-out 0s;}
+.subnav .container ul li:hover {transform: scale(1.2); color: #2dc997; margin: 0 25px;}
+.subnav .container ul .phone {font-size: 16px;}
+.subnav .container ul .comment {display: inline-block; position: absolute; right: 0; display: flex; align-items: center;}
+.subnav .container ul li p {font-size: 6px; position: absolute; right: 0; overflow-wrap: normal; width: 190px; color: rgb(145, 101, 20);}
+
+
+
+/*********************************** next ***********************************/
+
+.next {position: relative; display: flex; justify-content: center; min-height: 330px; background: #fff;}
+
+.next a {position: relative; display: block; text-align: center; margin: 20px; box-sizing: border-box; transition: all 0.5s ease-in; border-top: groove 1px #6dd5ed; border-right: ridge 10px #6dd5ed;}
+
+.next a:hover {transform: translateY(-15%);}
+.next a:hover h2 {width: 97.5%; height: 97.5%; opacity: .5; background: rgb(255,255,255); background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgb(70, 194, 224) 82%, rgb(33, 202, 202) 100%); }
+
+.next a h2 {position: absolute; top: 0; right: 0; color: #fff; background: #6dd5ed; width: 40%; height: 30px; text-align: center; font-size:20px; padding: 5px; transition: all 0.3s ease-in-out;}
+.next a h2 i {padding-left: 10px; transform: translateY(-5%); font-size: 20px;}
+
+.next img {width: 420px; height: 330px; box-sizing: border-box; overflow: hidden;}
+
+
+/******************************** FOOTER ********************************/
+
+footer .footer {display: block; background: rgb(30, 32, 36); font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); font-weight: 400; text-align: center; padding: 40px 0 30px;}
+footer .footer p {display: inline-block; width: 300px; height: 40px; font-size: 20px; font-weight: bold;}
+
+footer .footer ul {padding: 14px 0 14px;}
+footer .footer ul li {position: relative; display: inline-block; font-style: 16px; padding: 0 10px;}
+footer .footer ul li::after {content: ''; position: absolute; width: 1px; height: 8px; right: 0; top: 50%; margin-top: -4px; background: #70767a;}
+footer .footer ul li:last-child::after {display: none;}
+address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.5);}

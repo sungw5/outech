@@ -32,7 +32,7 @@ header .menu li:hover::before, header .menu li:hover > a::before { visibility: v
 }
 
 /* Intro 회사소개 active */
-header .menu li:first-child a::before {visibility: visible; transform: scale(1); height: 3px; background: linear-gradient(to right, #2193b0, #6dd5ed);}
+header .menu li:nth-child(2) a::before {visibility: visible; transform: scale(1); height: 3px; background: linear-gradient(to right, #2193b0, #6dd5ed);}
 
 /* dropdown icon */
 header .menu li a i {padding-left: 8px;}
