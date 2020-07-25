@@ -126,6 +126,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 
 .machine {position: relative; min-height: 1680px; }
+.cutting3 {min-height: 1080px;}
 
 /* CATEGORY */
 .category {background: #44c1dd;}
