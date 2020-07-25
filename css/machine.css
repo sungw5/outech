@@ -67,6 +67,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .ftc20 > img {top: 130px;}
 .ftc350LY .content {top: 100px;}
 .ftc350SLY .content {top: 100px;}
+.fmh400 .content,.fmh500 .content, .fmh630 .content, .fmh800 .content, .fmh1000 .content{top: 100px;}
 
 /*********************************** SUBNAV ***********************************/
 
