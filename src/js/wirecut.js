@@ -1,7 +1,13 @@
 ///////////////// VARIABLES ////////////////////
 const body = document.querySelector("body");
 const chmer = document.querySelector(".chmer");
+const titlePic = document.querySelector(".titlepic");
+const titleText = document.querySelector(".titlepic .text");
 
+function titleChange() {
+  titlePic.style = "background-size: 100vw";
+  titleText.style = "letter-spacing: 6px";
+}
 //---------- Scroll Events ------------///
 function headerChange() {
   if (this.scrollY > 75) {
@@ -17,6 +23,7 @@ function headerChange() {
 
 ///////////////// MAIN ////////////////////
 function init() {
+  window.addEventListener("load", titleChange, false);
   // scroll events
   //   window.addEventListener("scroll", headerChange, false);
   //   window.addEventListener("scroll", barChange, false);
