@@ -20,7 +20,7 @@
     </style>
     <!-- KAKAO API -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=89ab4957a875100279396e153b3bebe9"></script>
-    
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=89ab4957a875100279396e153b3bebe9&libraries=LIBRARY"></script>
   </head>
 
   <body>
@@ -232,11 +232,46 @@
   <script>
     var container = document.getElementById('map');
     var options = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3
+        center: new kakao.maps.LatLng(37.183472, 126.794111),
+        level: 1
     };
 
     var map = new kakao.maps.Map(container, options);
+
+    // 지도에 확대 축소 컨트롤을 생성한다
+    var zoomControl = new kakao.maps.ZoomControl();
+
+		// 지도의 우측에 확대 축소 컨트롤을 추가한다
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+    
+    // 지도 중심 좌표 변화 이벤트를 등록한다
+		kakao.maps.event.addListener(map, 'center_changed', function () {
+			console.log('지도의 중심 좌표는 ' + map.getCenter().toString() +' 입니다.');
+    });
+    
+
+    // 커스텀 오버레이를 생성하고 지도에 표시한다
+		var customOverlay = new kakao.maps.CustomOverlay({
+			map: map,
+			content: '<div style="padding:0 5px;background:#fff; border:1px solid #000">(주)오유/오유테크코리아 </div>', 
+			position: new kakao.maps.LatLng(37.183472, 126.794111), // 커스텀 오버레이를 표시할 좌표
+			xAnchor: 0.5, // 컨텐츠의 x 위치
+			yAnchor: 3 // 컨텐츠의 y 위치
+    });
+    
+        // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.183472, 126.794111); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
   </script>
   </body>
 </html>
