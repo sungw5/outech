@@ -105,3 +105,18 @@ footer .footer ul li {position: relative; display: inline-block; font-style: 16p
 footer .footer ul li::after {content: ''; position: absolute; width: 1px; height: 8px; right: 0; top: 50%; margin-top: -4px; background: #70767a;}
 footer .footer ul li:last-child::after {display: none;}
 address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.5);}
+
+
+
+
+/* subnav size modification */
+@media (min-width: 1281px) and (max-width: 1420px){
+    .subnav .container {margin: 0 15px 0 27px}
+    .subnav .container ul {margin: 0 7px;}
+    .subnav .container ul li {margin: 0 9px; padding: 0;}
+    .subnav .container ul li p {font-size: 4px;}
+}
+
+@media (max-width: 1280px){
+    .subnav .container ul li p {display: none;}
+}
