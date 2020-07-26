@@ -5,6 +5,14 @@ const feeler = document.querySelector(".feeler");
 const ffglogo = document.querySelector(".feeler .ffglogo");
 const feelercircle = document.querySelector(".feeler .feelercircle");
 
+const titlePic = document.querySelector(".titlepic");
+const titleText = document.querySelector(".titlepic .text");
+
+function titleChange() {
+  titlePic.style = "background-size: 106vw";
+  titleText.style = "letter-spacing: 6px";
+}
+
 //---------- Scroll Events ------------///
 function headerChange() {
   if (this.scrollY > 35) {
@@ -76,6 +84,7 @@ function init() {
   window.addEventListener("scroll", headerChange, false);
   window.addEventListener("scroll", barChange, false);
   window.addEventListener("scroll", circleFade, false);
+  window.addEventListener("load", titleChange, false);
 
   // category events
   for (let i = 0; i < category.length; i++) {

@@ -3,6 +3,14 @@ const body = document.querySelector("body");
 const yellowBar = document.querySelector(".yellow-bar");
 const chmer = document.querySelector(".chmer");
 
+const titlePic = document.querySelector(".titlepic");
+const titleText = document.querySelector(".titlepic .text");
+
+function titleChange() {
+  titlePic.style = "background-size: 100vw";
+  titleText.style = "letter-spacing: 6px";
+}
+
 //---------- Scroll Events ------------///
 function headerChange() {
   if (this.scrollY > 75) {
@@ -75,6 +83,7 @@ function init() {
   // scroll events
   window.addEventListener("scroll", headerChange, false);
   window.addEventListener("scroll", barChange, false);
+  window.addEventListener("load", titleChange, false);
 
   // category events
   for (let i = 0; i < category.length; i++) {

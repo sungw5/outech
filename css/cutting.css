@@ -9,7 +9,7 @@
 
 html{scroll-behavior:smooth}
 
-body {position: relative; height: 100%; min-width: 1280px; background: rgb(29, 27, 28); transition: all 0.6s ease-in-out;}
+body {position: relative; height: 100%; min-width: 1250px; background: rgb(29, 27, 28); transition: all 0.6s ease-in-out;}
 /*********************************** HEADER ***********************************/
 /* header logo (left) */
 
@@ -46,11 +46,11 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 /******************************** TITLEPIC ***********************************/
 
-.bg-shade {background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/ width:100%; min-height:290px; position: absolute;}
+.bg-shade {background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/ width:100%; min-height:750px; position: absolute;}
 /* parallax effect bg */
-.titlepic {display: grid; justify-content: center; align-items: center; width: 100%; min-height: 290px; background: url(../asset/images/cutting/T_SolidEndMills_2.jpg) 0 -200px  no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
+.titlepic {display: grid; justify-content: center; align-items: center; width: 100%; min-height: 750px; background: url(../asset/images/cutting/T_SolidEndMills_2.jpg) 0 -200px  no-repeat; background-position: center; background-size: 130vw; background-attachment: fixed; transition: all 7s ease-out;}
 
-.titlepic .text {font-size: 38px; width: 100%; color: #fff; z-index: 10;}
+.titlepic .text {font-size: 50px; width: 100%; color: #fff; z-index: 10; font-weight: 700; letter-spacing: 38px; transition: all 1s ease-out;}
 
 
 /*****************************************************************************/
@@ -60,7 +60,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .feeler::before {content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 2300px; background: #dbd7d7; opacity: 0.7; z-index: -1;}
 /* yellow bar */
-.feeler img.ffglogo {position: absolute; left: 20%; transform: translateX(-50%); top: 60px; background: #fff;
+.feeler img.ffglogo {position: absolute; left: 20%; transform: translateX(-50%); top: 60px; background: #fff; width: 680px;
     z-index: 10; transition: all .5s ease-in-out; opacity: 0;
     -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #6dd5ed, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #2193b0, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #6dd5ed, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #2193b0, 5px 5px 15px 5px rgba(0,0,0,0);}
@@ -70,7 +70,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .feeler span.introduction {position: absolute; top: 200px; left: 72%; font-size: 27px; font-family: 'Oswald', sans-serif; letter-spacing: 0.2em; color: #010101;}
 
-.feeler img.ffgbuilding {position: absolute; top: 400px; left: 40%;}
+.feeler img.ffgbuilding {position: absolute; top: 400px; left: 38%; width: 660px; overflow: hidden;}
 .feeler img.feelerlogo {position: absolute; top: 615px; left: 60%;}
 .feeler img.example {position: absolute; left: -15%; top: 900px;}
 .feeler img.feelercircle {position: absolute; left: 50%; transform: translateX(-50%); top: 1500px; opacity: 0.2; transition: all .5s ease-in-out;}
@@ -117,7 +117,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .next a h2 {position: absolute; top: 0; right: 0; color: #fff; background: #6dd5ed; width: 40%; height: 30px; text-align: center; font-size:20px; padding: 5px; transition: all 0.3s ease-in-out;}
 .next a h2 i {padding-left: 10px; transform: translateY(-5%); font-size: 20px;}
 
-.next img {width: 420px; height: 330px; box-sizing: border-box; overflow: hidden;}
+.next img {width: 360px; height: 270px; box-sizing: border-box; overflow: hidden;}
 
 
 
@@ -194,4 +194,8 @@ address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255
 
 @media (max-width: 1280px){
     .subnav .container ul li p {display: none;}
+    .feeler img.ffglogo {width: 600px;}
+
+    .feeler p.p-feelerintro {width: 560px; font-size: 14px;}
+    
 }
