@@ -15,7 +15,7 @@ header:hover a, header:hover .menu a {color: #000;}
 
 header h1 {position: absolute; left: 50px; top:0;}
 header h1 a {display: block; width: 330px; height: 70px; display: flex; align-items: center; justify-content: center; color: #fff;}
-header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -20px; transform: scale(0.4) translateY(4.5%);}
+header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -25px; transform: scale(0.4) translateY(4.5%); padding-right: 10px; margin-right: 10px;}
 
 
 /* header menu */
@@ -89,3 +89,16 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 /******************************** COMPANY SECTION ********************************/
 
 .company-section {position: relative; height: 1000px; margin: 0 auto; padding: 0 30px;}
+
+
+/* subnav size modification */
+@media (min-width: 1281px) and (max-width: 1420px){
+    .subnav .container {margin: 0 15px 0 27px}
+    .subnav .container ul {margin: 0 7px;}
+    .subnav .container ul li {margin: 0 9px; padding: 0;}
+    .subnav .container ul li p {font-size: 4px;}
+}
+
+@media (max-width: 1280px){
+    .subnav .container ul li p {display: none;}
+}
