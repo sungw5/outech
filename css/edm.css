@@ -70,7 +70,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .chmer img.chmerbuilding {position: absolute; top: 240px; left: 40%; z-index: 1; width: 579px; height: 362px;}
 
 /* foundation box */
-.chmer p.p-foundation {position: absolute; width: 455px; top: 480px;left: 65%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #f8b922 solid; box-sizing: border-box; padding: 140px 40px 40px; z-index: 2; background: #fff; color: #666666;}
+.chmer p.p-foundation {position: absolute; width: 455px; top: 480px;left: 65%;  overflow-wrap: break-word; font-size: 14.7px; line-height: 1.8em; border: 1px #f8b922 solid; box-sizing: border-box; padding: 140px 40px 40px; z-index: 2; background: #fff; color: #666666;}
 /* foundation box titles */
 .chmer p.p-foundation > span.edm {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #f8b922; font-size: 32px; letter-spacing: 0.2em;}
 .chmer p.p-foundation > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
