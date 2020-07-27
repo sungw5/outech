@@ -84,7 +84,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .feeler p.p-ffgintro > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
 
 /* feeler intro box */
-.feeler p.p-feelerintro {position: absolute; width: 650px; top: 1040px; left: 45%;  overflow-wrap: break-word; font-size: 16px; line-height: 1.8em; border: 1px #6dd5ed solid; box-sizing: border-box; padding: 140px 50px 40px; z-index: 2; background: #fff; color: #666666;}
+.feeler p.p-feelerintro {position: absolute; width: 650px; top: 1040px; left: 45%;  overflow-wrap: break-word; font-size: 14.5px; line-height: 1.8em; border: 1px #6dd5ed solid; box-sizing: border-box; padding: 140px 50px 40px; z-index: 2; background: #fff; color: #666666;}
 .feeler p.p-feelerintro > span.ffg {position: absolute; left: 40px; top: 30px; font-family: 'Oswald', sans-serif; color: #6dd5ed; font-size: 32px; letter-spacing: 0.2em;}
 .feeler p.p-feelerintro > span.foundation {position: absolute; left: 40px; top: 70px; font-family: 'Oswald', sans-serif; color: #333333; font-size: 32px; letter-spacing: 0.2em;}
 
