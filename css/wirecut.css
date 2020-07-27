@@ -19,7 +19,7 @@ header:hover a, header:hover .menu a {color: #000;}
 
 header h1 {position: absolute; left: 50px; top:0;}
 header h1 a {display: block; width: 330px; height: 70px; display: flex; align-items: center; justify-content: center; color: #000;}
-header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -25px; transform: scale(0.4) translateY(4.5%); padding-right: 10px; margin-right: 10px;}
+header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -29px; transform: scale(0.4) translateY(4.5%); padding-right: 10px; margin-right: 10px;}
 
 
 /* header menu */
@@ -109,7 +109,11 @@ address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255
 
 /* subnav size modification */
 @media (max-width: 1420px){
-    
+    .target-info > img {width: 550px; left: 15px;}
+    .q > img {width: 500px; top: 150px;}
+    .rv >img {top: 140px;}
+    #q3020L > img {width: 600px;}
+    #q5030L > img {width: 400px;}
 }
 
 @media (min-width: 1281px) and (max-width: 1420px){

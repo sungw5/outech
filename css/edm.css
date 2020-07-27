@@ -19,7 +19,7 @@ header:hover a, header:hover .menu a {color: #000;}
 
 header h1 {position: absolute; left: 50px; top:0;}
 header h1 a {display: block; width: 330px; height: 70px; display: flex; align-items: center; justify-content: center; color: #fff;}
-header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -25px; transform: scale(0.4) translateY(4.5%); padding-right: 10px; margin-right: 10px;}
+header h1 a::before {content: ""; position: absolute; width: 82px; height: 86px; background: url(../asset/icons/businesscard.png) no-repeat; background-position: -23px -59px; left: -29px; transform: scale(0.4) translateY(4.5%); padding-right: 10px; margin-right: 10px;}
 
 
 /* header menu */
@@ -108,7 +108,7 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .next {position: relative; display: flex; justify-content: center; min-height: 330px; background: #fff;}
 
-.next a {position: relative; display: block; text-align: center; margin: 20px; box-sizing: border-box; transition: all 0.5s ease-in; border-top: groove 1px #f8b922; border-right: ridge 10px #f8b922;}
+.next a {position: relative; display: block; text-align: center; margin: 20px; box-sizing: border-box; transition: all 0.5s ease-in; border-top: groove 1px #f8b922; border-right:10px ridge  #f8b922;}
 
 .next a:hover {transform: translateY(-15%);}
 .next a:hover h2 {width: 97.5%; height: 97.5%; opacity: .5; background: rgb(255,255,255); background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(248,185,34,1) 82%, rgba(248,185,34,1) 100%); }
@@ -124,17 +124,17 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 .wirecut {position: relative; min-height: 1080px; }
 
 /* CATEGORY */
-.category {background: #e0aa2b;}
+.category {background: #353534;}
 
 .category ul {display: flex; justify-content: center; align-items: center; min-width: 300px; color: #000; margin: 0px 400px;}
 
 .category ul li {position: relative; height: 50px; width: 350px;}
 
-.category ul li a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; box-sizing: border-box; color: #fff; font-size: 17px; font-weight: 600; background: #e0aa2b; border-bottom: 5px ridge #fff; transition: all 0.3s ease-in-out;}
+.category ul li a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; box-sizing: border-box; color: #fff; font-size: 17px; font-weight: 600; background: #353534; border-bottom: 5px ridge #fff; transition: all 0.3s ease-in-out;}
 
-.category ul li a:hover {background: #f3cb6d;}
+.category ul li a:hover {background: #a3a3a0;}
 
-.category ul li a::after {content: ''; position: absolute; width: 2px; height: 16px; right: 0; top: 50%; transform: translateY(-40%); margin-top: -4px; background: #c29912;}
+.category ul li a::after {content: ''; position: absolute; width: 2px; height: 16px; right: 0; top: 50%; transform: translateY(-40%); margin-top: -4px; background: #7a7979;}
 /* Hover effect */
 .category ul li a::before {content: ""; position: absolute; width: 100%; height: 5px; left: 0; bottom: 0; background: linear-gradient(to right, #2193b0, #6dd5ed); color: #fff; visibility: hidden; transform: scale(0); transition: all 0.2s ease-in-out 0s;}
 .category ul li:hover::before, .category ul li:hover > a::before  {visibility: visible; transform: scale(1);}
@@ -149,16 +149,16 @@ header .menu li:hover .dropdown {visibility: visible; opacity: 1;}
 
 .wirecut .container {width: 1000px; display: grid; grid-template-columns: repeat(4, 1fr); justify-content: center; grid-gap: 35px; margin-top: 220px; }
 
-.box {position: relative; width: 280px; height: 250px; background: #fff; box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);}
+.box {position: relative; width: 280px; height: 250px; background: #fff; box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); border: 1px solid rgb(219, 216, 216);}
 .box .imgBox {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .box .imgBox img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: 0.5s;}
 .box:hover .imgBox img {opacity: 0;}
-
-.box .content {position: absolute; bottom: 20px; left: 10%; width: 80%; height: 40px; background: #fff; transition: 0.5s; overflow: hidden; padding: 15px; box-sizing: border-box; background: #f8b922;}
+/* model name color */
+.box .content {position: absolute; bottom: 0px; left: 0%; width: 100%; height: 40px; background: #fff; transition: 0.5s; overflow: hidden; padding: 15px; box-sizing: border-box; background: #353534; }
 .box:hover .content {width: 100%; height: 100%; left: 0; bottom: 0;}
 .box .content h3 {text-align: center; margin: 0; padding: 0; font-size: 20px; color: #fff; transform: translateY(-30%);}
 .box .content p {margin: 10px 0 0; padding: 0; opacity: 0; line-height: 1.2em; transition: 0.5s; text-align: center; transform: translateY(150%);}
-.box:hover .content p {opacity: 1; transition-delay: 0.2s; color: #1d1d1d; font-size: 25.2px; text-align: center; transform: translateY(150%); font-weight: 250; letter-spacing: 3px;}
+.box:hover .content p {opacity: 1; transition-delay: 0.2s; color: #fff; font-size: 25.2px; text-align: center; transform: translateY(150%); font-weight: 250; letter-spacing: 3px;}
 
 /* active or not */
 .wirecut .active a::before {content: ""; position: absolute; width: 100%; height: 5px; left: 0; bottom: 0; background: linear-gradient(to right, #2193b0, #6dd5ed); color: #fff; visibility: visible; transform: scale(1);}
@@ -182,7 +182,15 @@ footer .footer ul li::after {content: ''; position: absolute; width: 1px; height
 footer .footer ul li:last-child::after {display: none;}
 address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.5);}
 
-
+@media (max-width: 1420px){
+    .ds .category ul li a {font-size: 13.5px;}
+    .chmer p.p-foundation {font-size: 12px; width: 400px;}
+    .chmer p.p-awards {font-size: 13px;}
+    .chmer img.chmermachines {width: 450px; height: 360px;}
+    .chmer p.p-machines {font-size: 14px;}
+    .next a {margin: 10px;}
+    .next img {width: 290px; height: 240px;}
+}
 
 /* subnav size modification */
 @media (min-width: 1281px) and (max-width: 1420px){

@@ -107,7 +107,9 @@ footer .footer ul li:last-child::after {display: none;}
 address {font-size: 12px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.5);}
 
 
-
+@media (max-width: 1420px){
+    .target-info > img {left: 0;}
+}
 
 /* subnav size modification */
 @media (min-width: 1281px) and (max-width: 1420px){
